@@ -1,0 +1,34 @@
+.blog {
+  background: #f8f9fa;
+}
+.blog-iteams {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  padding-bottom: 10vh;
+}
+.blog-iteams img {
+  width: 192px;
+  height: 192px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 1rem;
+}
+
+.blog h1 {
+  font-family: "Laila", serif;
+  text-align: center;
+  padding: 10vh 2vh;
+  font-size: 2em;
+}
+@media screen and(max-width:953px) {
+  .blog-iteams {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  #imgs {
+    margin-top: 10vh;
+  }
+} ;

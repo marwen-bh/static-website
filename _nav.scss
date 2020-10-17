@@ -1,0 +1,76 @@
+.main-head {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #f8f9fa;
+  &.scrolled {
+    background-color: #95b7da;
+    color: white;
+    a {
+      color: white;
+    }
+  }
+}
+nav {
+  display: flex;
+  min-height: 10vh;
+  width: 90%;
+  margin: auto;
+}
+
+#logo {
+  flex: 1 1 40rem;
+  margin-top: 1rem;
+  font-family: "EB Garamond", serif;
+}
+.topnav {
+  display: flex;
+  flex: 1 1 20rem;
+  list-style: none;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: large;
+  a {
+    text-decoration: none;
+    display: block;
+    color: black;
+  }
+
+  .icon {
+    display: none;
+    font-size: x-large;
+  }
+}
+@media screen and (max-width: 890px) {
+  .topnav a {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    margin-left: 90%;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    margin-top: 2vh;
+  }
+  .topnav {
+    flex-direction: column;
+  }
+}

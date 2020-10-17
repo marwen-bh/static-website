@@ -1,0 +1,40 @@
+.icontainer {
+  padding: 25vh 0vh;
+  background: #f8f9fa;
+  display: flex;
+  flex-direction: row;
+  // flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  i {
+    font-size: 5rem;
+    color: rgb(89, 138, 216);
+  }
+  i:hover {
+    font-size: 6rem;
+  }
+}
+
+.about h3 {
+  font-size: x-large;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin: 1rem;
+}
+p {
+  font-size: large;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: rgb(85, 84, 84);
+}
+@media screen and(max-width:953px) {
+  .icontainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .second {
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+  }
+} ;
